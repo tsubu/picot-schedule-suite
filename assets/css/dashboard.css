@@ -1,0 +1,94 @@
+.pss-dashboard__lead {
+    margin: 0 0 1.5rem;
+    color: #50575e;
+    font-size: 14px;
+}
+
+.pss-dashboard__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    max-width: 1100px;
+}
+
+.pss-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 1.25rem 1.35rem 1.4rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.pss-card--disabled {
+    opacity: 0.65;
+}
+
+.pss-card__icon .dashicons {
+    width: 36px;
+    height: 36px;
+    font-size: 36px;
+    color: #2271b1;
+}
+
+.pss-card__title {
+    margin: 0.75rem 0 0.4rem;
+    font-size: 1.15rem;
+}
+
+.pss-card__desc {
+    margin: 0 0 0.85rem;
+    color: #50575e;
+    line-height: 1.5;
+}
+
+.pss-card__shortcode {
+    margin: 0 0 1rem;
+}
+
+.pss-card__shortcode code {
+    display: inline-block;
+    padding: 0.25rem 0.45rem;
+    background: #f0f0f1;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.pss-card__actions {
+    margin: 0;
+}
+
+.pss-card__actions--muted {
+    color: #646970;
+    font-size: 12px;
+}
+
+.pss-dashboard__section-title {
+    margin-top: 32px;
+}
+
+.pss-card__count {
+    margin-left: 0.4rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: #f0f6fc;
+    color: #2271b1;
+    font-size: 12px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.pss-card__actions .button + .button {
+    margin-left: 0.4rem;
+}
+
+.pss-recent {
+    max-width: 1100px;
+}
+
+.pss-recent code {
+    font-size: 12px;
+}
+
+.pss-dashboard__empty {
+    color: #646970;
+}

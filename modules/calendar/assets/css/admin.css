@@ -1,0 +1,184 @@
+.bd-calendar-admin-wrapper {
+  /* Remove card style from outer wrapper to let tabs sit on top of content */
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 10px 0; /* Minimal padding */
+  overflow: auto; /* Ensure it clears floats and contains content */
+}
+
+.bd-section {
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------
+   Tabs
+--------------------------------------------------------- */
+.nav-tab-wrapper.bd-nav-tabs {
+    margin-bottom: 0; /* Tabs sit directly on content */
+    border-bottom: 1px solid #c3c4c7; /* Match WP border */
+    padding-left: 10px;
+}
+
+/* Content Box acts as the "Folder" body */
+.bd-tab-content {
+    display: none;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-top: none; /* Merges with the tab border */
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bd-tab-content.active {
+    display: block;
+}
+
+/* Ensure the active tab "connects" to the content */
+.bd-nav-tabs .nav-tab-active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* ---------------------------------------------------------
+   Status List
+--------------------------------------------------------- */
+.bd-status-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  flex-wrap: wrap; /* Safety for desktop overflow */
+}
+
+.bd-color-picker {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------
+   Calendar Grid
+--------------------------------------------------------- */
+.bd-controls,
+.bd-tools {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bd-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.bd-month {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bd-month-title {
+  background: #f0f0f1;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.bd-month-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bd-month-table th {
+  background: #fafafa;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+}
+
+.bd-month-table td {
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 8px 2px;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 40px;
+  width: 14.28%; /* 7 cols */
+  box-sizing: border-box;
+}
+
+.bd-month-table td:hover {
+  filter: brightness(0.95);
+}
+
+.bd-month-table td.empty {
+  background: #fff !important;
+  cursor: default;
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+@media (max-width: 782px) { /* WordPress Mobile Breakpoint */
+  .bd-status-row {
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  .bd-status-row input[type="text"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* Order: ID -> Label -> Hours -> Utils */
+  .bd-status-key { order: 1; }
+  .bd-status-label { order: 2; }
+  .bd-status-hours { order: 3; }
+  
+  .bd-status-bg, .bd-status-text, .bd-remove-status {
+    order: 4;
+    margin-top: 5px;
+  }
+  
+  .bd-status-row span {
+      display: none;
+  }
+
+  .bd-color-picker {
+      width: 50px;
+      height: 40px;
+      margin-right: 10px;
+  }
+}
+
+/* 祝日: 右上に小さな印（ホバーで祝日名） */
+.bd-month-table td.bd-holiday {
+    position: relative;
+    font-weight: bold;
+}
+
+.bd-month-table td.bd-holiday::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #d63638;
+}

@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "picot-schedule-suite/timetable",
+    "title": "時間割",
+    "category": "widgets",
+    "icon": "welcome-learn-more",
+    "description": "作成した時間割を表示します。",
+    "keywords": ["timetable", "schedule", "時間割"],
+    "textdomain": "picot-schedule-suite",
+    "attributes": {
+        "id": { "type": "number", "default": 0 }
+    },
+    "supports": {
+        "html": false,
+        "align": [ "wide", "full" ]
+    },
+    "editorScript": "pss-blocks-editor"
+}

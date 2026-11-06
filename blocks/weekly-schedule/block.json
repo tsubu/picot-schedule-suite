@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "picot-schedule-suite/weekly-schedule",
+    "title": "週間スケジュール",
+    "category": "widgets",
+    "icon": "clock",
+    "description": "作成した週間スケジュールを表示します。",
+    "keywords": ["weekly", "schedule", "週間"],
+    "textdomain": "picot-schedule-suite",
+    "attributes": {
+        "id": { "type": "number", "default": 0 }
+    },
+    "supports": {
+        "html": false,
+        "align": [ "wide", "full" ]
+    },
+    "editorScript": "pss-blocks-editor"
+}

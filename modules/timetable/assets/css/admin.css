@@ -1,0 +1,926 @@
+/* 管理画面用CSS */
+
+/* 言語切り替え */
+.language-switcher {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.language-switcher label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.language-switcher select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* タブ切り替え */
+.timetable-tabs {
+    margin-bottom: 20px;
+}
+
+.timetable-tabs .nav-tab-wrapper {
+    border-bottom: 1px solid #c3c4c7;
+    margin-bottom: 0;
+}
+
+.timetable-tabs .nav-tab {
+    margin-left: 0;
+    margin-right: 4px;
+    border-bottom: 1px solid #c3c4c7;
+    background: #f0f0f1;
+    color: #50575e;
+}
+
+.timetable-tabs .nav-tab.active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+.timetable-tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #c3c4c7;
+    border-top: none;
+}
+
+.timetable-tab-content:not(.active) {
+    display: none;
+}
+
+.timetable-selector {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.timetable-selector select {
+    min-width: 300px;
+    margin-bottom: 15px;
+}
+
+.create-timetable-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-timetable-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.no-time-slots {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    color: #856404;
+}
+
+.create-timetable-form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.timetable-editor {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.time-settings {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.time-slots-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.time-slots-table th,
+.time-slots-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.time-slots-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+}
+
+.time-slots-table input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.time-settings-help {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.time-settings-help h4 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.time-settings-help ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.time-settings-help li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* 時間設定一括管理用 */
+.time-master-management {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.time-master-list {
+    margin-bottom: 30px;
+}
+
+.time-master-form {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.time-master-application {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 時間マスター管理用 */
+.time-master-selection {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.time-master-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.time-master-table th,
+.time-master-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.time-master-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+}
+
+.individual-time-settings {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.time-master-help {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e7f3ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 4px;
+}
+
+.time-master-help h4 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.time-master-help ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.time-master-help li {
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+
+.timetable-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.timetable-grid th,
+.timetable-grid td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.timetable-grid th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+.time-header {
+    background: #e9ecef !important;
+    font-weight: 700;
+    color: #495057;
+    min-width: 120px;
+}
+
+.day-header {
+    background: #007bff !important;
+    color: white !important;
+    font-weight: 600;
+    min-width: 100px;
+}
+
+.timetable-cell {
+    background: #fff;
+    min-height: 120px;
+    position: relative;
+}
+
+.timetable-cell.observable {
+    border: 3px solid #dc3545 !important;
+    background: #fff5f5;
+}
+
+.cell-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+}
+
+.content-select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.observable-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8em;
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.observable-checkbox input[type="checkbox"] {
+    margin: 0;
+}
+
+.cell-comment {
+    width: 100%;
+    min-height: 40px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 0.8em;
+    resize: vertical;
+}
+
+.shortcode-display {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.shortcode-display code {
+    background: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* コンテンツ管理ページ用 */
+.contents-list {
+    margin-bottom: 30px;
+}
+
+.contents-list table {
+    margin-top: 15px;
+}
+
+.content-form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.sample-contents {
+    background: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.sample-contents ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.sample-contents li {
+    margin-bottom: 5px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .timetable-grid {
+        font-size: 0.8em;
+    }
+    
+    .timetable-grid th,
+    .timetable-grid td {
+        padding: 4px;
+    }
+    
+    .content-select,
+    .cell-comment {
+        font-size: 0.7em;
+    }
+    
+    .observable-checkbox {
+        font-size: 0.7em;
+    }
+}
+
+/* 成功・エラーメッセージ */
+.notice {
+    margin: 20px 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.notice-success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.notice-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+/* 直感的な時間割編集UI */
+.intuitive-timetable-editor {
+    margin-top: 20px;
+}
+
+.editor-controls {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.time-slot-selector {
+    flex: 1;
+}
+
+.time-slot-selector h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.time-slot-selector p {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 13px;
+}
+
+.timetable-grid-container {
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.timetable-grid {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.timetable-grid th {
+    background: #f8f9fa;
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.timetable-grid td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    vertical-align: top;
+    min-width: 120px;
+}
+
+.time-header {
+    background: #f8f9fa;
+    text-align: center;
+    position: relative;
+    min-width: 100px;
+}
+
+.time-info {
+    margin-bottom: 8px;
+}
+
+.time-info strong {
+    display: block;
+    font-size: 14px;
+    color: #495057;
+}
+
+.time-info small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.time-actions {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.remove-time-row {
+    font-size: 8px;
+    padding: 1px 4px;
+}
+
+.timetable-cell {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+
+
+.cell-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cell-main {
+    flex: 1;
+}
+
+.cell-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 11px;
+}
+
+.content-select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.observable-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: #666;
+}
+
+.observable-checkbox input[type="checkbox"] {
+    margin: 0;
+}
+
+.cell-comment {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 10px;
+    resize: vertical;
+    min-height: 40px;
+}
+
+.timetable-actions {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.timetable-actions .submit {
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .editor-controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .timetable-grid-container {
+        overflow-x: scroll;
+    }
+    
+    .timetable-grid {
+        min-width: 800px;
+    }
+    
+    .cell-content {
+        gap: 5px;
+    }
+    
+    .content-select {
+        font-size: 11px;
+    }
+    
+    .cell-comment {
+        font-size: 9px;
+        min-height: 30px;
+    }
+}
+
+/* 曜日管理用スタイル */
+.days-management {
+    margin-bottom: 30px;
+}
+
+.days-form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.days-help {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.days-help h4 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.days-help ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.days-help li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* ショートコード一覧用スタイル */
+.shortcode-list {
+    margin-bottom: 30px;
+}
+
+.shortcode-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shortcode-list th {
+    background: #f9f9f9;
+    font-weight: 600;
+}
+
+.shortcode-list td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.shortcode-list code {
+    background: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.shortcode-help {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.shortcode-help h4 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.shortcode-help ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.shortcode-help li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* 時間割コピー用スタイル */
+.copy-form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.copy-help {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.copy-help h4 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.copy-help ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.copy-help li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* 名称変更タブ用 */
+.rename-form {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.rename-form .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+}
+
+.rename-form .form-table td {
+    padding: 15px 10px;
+}
+
+.rename-form input[readonly] {
+    background-color: #f9f9f9;
+    color: #666;
+}
+
+/* ショートコードタブ用 */
+.shortcode-display {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.shortcode-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.shortcode-box code {
+    flex: 1;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #333;
+}
+
+.shortcode-box .copy-shortcode {
+    white-space: nowrap;
+}
+
+/* CSS管理用スタイル */
+.css-management {
+    margin-bottom: 30px;
+}
+
+.css-form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.css-form .form-table th {
+    width: 150px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.css-form .form-table td {
+    padding: 15px 0;
+}
+
+.css-form textarea {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.4;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.css-form textarea:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+.css-help {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.css-help h4 {
+    margin-top: 0;
+    color: #495057;
+    font-size: 16px;
+}
+
+.css-help p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.css-help ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.css-help li {
+    margin-bottom: 8px;
+    color: #666;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    background: #fff;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #e9ecef;
+}
+
+.css-help li:hover {
+    background: #e9ecef;
+}
+
+/* CSSコードエディタのスタイル */
+.css-form .code {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 15px;
+    min-height: 400px;
+    resize: vertical;
+}
+
+.css-form .code:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+    outline: none;
+}
+
+/* CSS有効/無効の切り替え */
+.css-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.css-form label {
+    font-weight: 500;
+    color: #333;
+}
+
+.css-form .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .css-form .form-table th {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .css-form .form-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .css-form textarea {
+        width: 100%;
+        min-height: 300px;
+    }
+    
+    .css-help li {
+        font-size: 12px;
+        word-break: break-all;
+    }
+}

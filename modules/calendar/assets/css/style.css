@@ -1,0 +1,147 @@
+/* Business Day Calendar Frontend Styles */
+
+.bd-calendar-wrapper {
+    margin: 20px 0;
+    font-family: inherit;
+}
+
+/* Legend */
+.bd-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.bd-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bd-legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.bd-legend-hours {
+    font-size: 0.85em;
+    color: #666;
+    margin-left: 5px;
+}
+
+/* Calendar Grid */
+.bd-calendar-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.bd-calendar-month {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.bd-month-title {
+    background: #f0f0f1;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.bd-calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    table-layout: fixed; /* 祝日名などで列幅が崩れないよう 7 列均等 */
+}
+
+.bd-calendar-table th {
+    background: #fafafa;
+    text-align: center;
+    padding: 8px 2px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.bd-calendar-table td {
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 10px 2px;
+    box-sizing: border-box;
+    font-size: 0.95em;
+}
+
+.bd-calendar-table td.empty {
+    background: #fff !important;
+}
+
+@media screen and (max-width: 600px) {
+    .bd-calendar-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Popup */
+.bd-popup {
+    position: absolute;
+    z-index: 9999;
+    background: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    pointer-events: none; /* マウスイベントを透過（クリックで閉じやすくするため） */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.bd-popup::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.bd-date-cell {
+    cursor: pointer;
+}
+
+
+
+/* Holidays & today */
+.bd-calendar-table td.bd-holiday {
+    font-weight: bold;
+}
+
+.bd-holiday-name {
+    display: block;
+    font-size: 0.6em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-top: 2px;
+    overflow-wrap: anywhere;
+}
+
+.bd-calendar-table td.today {
+    outline: 2px solid currentColor;
+    outline-offset: -3px;
+}
+
+.bd-popup-holiday {
+    display: block;
+    font-weight: bold;
+}

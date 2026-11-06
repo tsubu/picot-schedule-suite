@@ -1,0 +1,47 @@
+/* Weekly Schedule */
+.bd-weekly-schedule-wrapper {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.bd-weekly-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px; /* 横スクロール対応 */
+}
+
+.bd-weekly-table th, .bd-weekly-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.95em;
+}
+
+.bd-slot-header {
+    background: #f9f9f9;
+    width: 25%;
+}
+
+.bd-day-header {
+    background: #f0f0f1;
+}
+
+.bd-day-sun { color: #d00; background: #ffeeee; }
+.bd-day-sat { color: #00d; background: #eefeff; }
+
+.bd-slot-cell {
+    background: #fafafa;
+    text-align: left;
+    font-weight: bold;
+}
+
+.bd-slot-time {
+    font-size: 0.85em;
+    font-weight: normal;
+    color: #666;
+}
+
+.bd-symbol-cell {
+    font-size: 1.2em;
+    font-weight: bold;
+}

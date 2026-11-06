@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "picot-schedule-suite/business-calendar",
+    "title": "営業日カレンダー",
+    "category": "widgets",
+    "icon": "calendar",
+    "description": "作成した営業日カレンダーを表示します。",
+    "keywords": ["calendar", "business day", "営業日", "カレンダー"],
+    "textdomain": "picot-schedule-suite",
+    "attributes": {
+        "id": { "type": "number", "default": 0 }
+    },
+    "supports": {
+        "html": false,
+        "align": [ "wide", "full" ]
+    },
+    "editorScript": "pss-blocks-editor"
+}
